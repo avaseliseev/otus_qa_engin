@@ -1,3 +1,5 @@
 /.idea/
 /Pipfile
 /Pipfile.lock
+/.pytest_cache/
+/tests/.pytest_cache/
