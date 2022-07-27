@@ -16,7 +16,22 @@ def csv_load_books():
         return [row for row in reader]
 
 
-USERS_JSON = json_load_user()
-BOOKS_JSON = csv_load_books()
-PATH_JSON_RESULT = f'{root_project_path}/result.json'
+def create_new_list_users(users_list):
+    for user in users_list:
+        for key in list(user.keys()):
+            if key not in ['name', 'gender', 'address', 'age']:
+                del user[key]
+    return users_list
 
+
+def create_new_list_books(books_list):
+    for book in books_list:
+        for key in list(book.keys()):
+            if key not in ['Title', 'Author', 'Pages', 'Genre']:
+                del book[key]
+    return books_list
+
+
+USERS_JSON = create_new_list_users(json_load_user())
+BOOKS_JSON = create_new_list_books(csv_load_books())
+PATH_JSON_RESULT = f'{root_project_path}/result.json'
