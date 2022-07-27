@@ -18,5 +18,5 @@ def csv_load_books():
 
 USERS_JSON = json_load_user()
 BOOKS_JSON = csv_load_books()
-PATH_JSON_RESULT = f'{root_project_path}/resources/result.json'
+PATH_JSON_RESULT = f'{root_project_path}/result.json'
 
