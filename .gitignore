@@ -6,3 +6,6 @@
 /.pytest_cache/
 /src/json_place_holder_api/.pytest_cache/
 /src/module_4/.pytest_cache/
+src/__pycache__/
+src/json_place_holder_api/__pycache__/
+src/utils/__pycache__/
