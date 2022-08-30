@@ -1,4 +1,7 @@
 /.idea/
 /Pipfile
 /Pipfile.lock
-**/__pycache__
+.pytest_cache
+.cache
+.local
+**/__pycache__/
