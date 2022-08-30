@@ -3,3 +3,4 @@
 /Pipfile.lock
 /.pytest_cache/
 /tests/.pytest_cache/
+**/__pycache__
