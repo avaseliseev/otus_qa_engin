@@ -37,4 +37,3 @@ def wait_element(selector: str, driver: webdriver, by=By.CSS_SELECTOR, timeout=2
         return WebDriverWait(driver=driver, timeout=timeout).until(EC.visibility_of_element_located((by, selector)))
     except TimeoutException:
         raise AssertionError(f'Селектор {selector} не найден')
-

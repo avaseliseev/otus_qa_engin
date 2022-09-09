@@ -9,7 +9,7 @@ def pytest_addoption(parser):
                      help="Добавьте браузер")
     parser.addoption("--headless", action='store_true', help="не открывать окно браузера")
     parser.addoption("--url", default=BASE_URL, help="адресс страницы")
-    parser.addoption("--time_out", default=4, help="тайм аут ожидания")
+    parser.addoption("--time_out", default=2, help="тайм аут ожидания")
 
 
 @pytest.fixture

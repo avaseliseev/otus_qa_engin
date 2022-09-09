@@ -13,9 +13,21 @@ def load_config():
 
 yml_config = load_config()
 
-# base url
-BASE_URL = f'{yml_config["base_url"]}'
-CHROME_DRIVER = f'{yml_config["chrome_driver"]}'
-FIREFOX_DRIVER = f'{yml_config["firefox_driver"]}'
-OPERA_DRIVER = f'{yml_config["opera_driver"]}'
-YANDEX_DRIVER = f'{yml_config["yandex_driver"]}'
+# urls
+BASE_URL = f'{yml_config["urls"]["base_url"]}'
+URL_ADMIN_PAGE = '/admin'
+URL_LOGIN_PAGE = '/index.php?route=account/register'
+URL_CARD_PRODUCT = '/desktops/mac/imac'
+URL_DESCTOP_PAGE = '/desktops'
+
+# drivers
+CHROME_DRIVER = f'{yml_config["driver"]["chrome_driver"]}'
+FIREFOX_DRIVER = f'{yml_config["driver"]["firefox_driver"]}'
+OPERA_DRIVER = f'{yml_config["driver"]["opera_driver"]}'
+YANDEX_DRIVER = f'{yml_config["driver"]["yandex_driver"]}'
+
+# user
+LOGIN = f'{yml_config["user"]["login"]}'
+PASSWORD = f'{yml_config["user"]["password"]}'
+TELEPHONE = int(f'{yml_config["user"]["telephone"]}')
+EMAIL = f'{yml_config["user"]["email"]}'
