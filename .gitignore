@@ -2,3 +2,6 @@
 /Pipfile
 /Pipfile.lock
 **/__pycache__
+/config.yml
+**/**.log
+.log
