@@ -16,9 +16,9 @@ yml_config = load_config()
 # urls
 BASE_URL = f'{yml_config["urls"]["base_url"]}'
 URL_ADMIN_PAGE = '/admin'
-URL_LOGIN_PAGE = '/index.php?route=account/register'
+URL_REGISTR_PAGE = '/index.php?route=account/register'
 URL_CARD_PRODUCT = '/desktops/mac/imac'
-URL_DESCTOP_PAGE = '/desktops'
+URL_DESKTOP_PAGE = '/desktops'
 
 # drivers
 CHROME_DRIVER = f'{yml_config["driver"]["chrome_driver"]}'
